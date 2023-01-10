@@ -6,11 +6,11 @@ import model.entities.Seller;
 
 public class Program {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		SellerDao sellerDao = DaoFactory.createSellerDao();
-		
-		Seller test = sellerDao.findById(3);
+
+		System.out.println("=== Test 1: seller findById ===");
+		Seller test = sellerDao.findById(3);		
 		
 		System.out.println(test);
 		
